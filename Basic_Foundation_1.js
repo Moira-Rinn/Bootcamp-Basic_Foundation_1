@@ -12,7 +12,7 @@ counting();
 function summation(){
   let sum=0;
   for(let i=1;i<=1000;i++){
-    sum = i+sum;
+    sum+=i;
   }
   return sum;
 }
@@ -23,7 +23,7 @@ console.log(summation());
 function summationOdd(){
   let oddSum = 0
   for(let i=1;i<5000;i+=2){
-    oddSum = i+oddSum;
+    oddSum+=i
   }
   return oddSum;
 }
@@ -33,7 +33,7 @@ console.log(summationOdd());
 
 function summationArr(arr){
   let arrSum = 0
-  arr.forEach(val => arrSum=val+arrSum);
+  arr.forEach(val => arrSum+=val);
   return arrSum
 }
 console.log(summationArr([-5,2,5,12]));
@@ -51,7 +51,7 @@ console.log(maxVal([-3,3,5,7]));
 
 function arrAvg(arr){
   let sum=0;
-  arr.forEach(val => sum=val+sum);
+  arr.forEach(val => sum+=val);
   return isAvg = sum/arr.length;
 }
 console.log(arrAvg([1,3,5,7,20]));
